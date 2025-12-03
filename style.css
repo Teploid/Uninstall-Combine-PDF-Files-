@@ -33,8 +33,9 @@ body {
     align-items: center;
     gap: 32px;
     margin: 0 auto;
-    padding: 60px 20px 0 20px;
+    padding: 60px 10px 0 10px;
     min-height: 100vh;
+    overflow: visible;
 }
 
 /* Header section */
@@ -65,14 +66,17 @@ body {
     justify-content: center;
     align-items: stretch;
     min-height: 0;
+    overflow: visible;
 }
 
 .google-form {
     width: 100%;
+    max-width: none;
     height: 100%;
     min-height: 600px;
     border: none;
     background: transparent;
+    overflow: visible;
 }
 
 /* Footer links */
@@ -101,11 +105,12 @@ body {
 @media (max-width: 768px) {
     .main-container {
         gap: 24px;
-        padding: 40px 15px 0 15px;
+        padding: 40px 5px 0 5px;
     }
     
     .main-title {
         font-size: 36px;
+        padding: 0 10px;
     }
     
     .google-form {
@@ -116,11 +121,12 @@ body {
 @media (max-width: 480px) {
     .main-container {
         gap: 20px;
-        padding: 30px 10px 0 10px;
+        padding: 30px 0 0 0;
     }
     
     .main-title {
         font-size: 28px;
+        padding: 0 10px;
     }
     
     .google-form {
